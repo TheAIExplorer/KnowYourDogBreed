@@ -37,9 +37,21 @@ def predict_dog_breed(image_upload):
     label = predicted_breed.numpy()[0].decode()
     return label
 
-# Define Gradio components
-image_upload = gr.inputs.Image()
-label = gr.outputs.Textbox()
-
 # Create and launch the Gradio interface
-gr.Interface(fn=predict_dog_breed, inputs=image_upload, outputs=label).launch(share=True)
+demo = gr.Interface(
+    predict_dog_breed, 
+    inputs = "image",
+    outputs="text",
+    title = "Dog Breed Predictor",
+    description="Upload an image of your dog to predict its breed.",
+    cache_examples=True,
+    theme="default",
+    allow_flagging="manual",
+    flagging_options=["Flag as incorrect", "Flag as inaccurate"],
+    analytics_enabled=True,
+    batch=False,
+    max_batch_size=4,
+    allow_duplication=False
+)
+
+demo.launch()
