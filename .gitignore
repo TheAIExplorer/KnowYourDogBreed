@@ -1,3 +1,7 @@
 *.h5 
 *.ipynb_checkpoints
-*.npy 
+*.npy
+*.jpg
+*.png
+*.jpeg
+.tflite
