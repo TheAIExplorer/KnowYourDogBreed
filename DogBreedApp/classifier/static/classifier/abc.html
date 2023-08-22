@@ -1,0 +1,74 @@
+
+<body class="flex flex-col min-h-screen bg-white dark:bg-gray-950 text-black SpacePage">
+    <div class="flex min-h-screen flex-col"><div class="SVELTE_HYDRATER contents" data-props="{}" data-target="SystemThemeMonitor"></div>
+
+<div class="SVELTE_HYDRATER contents" data-props="{}" data-target="GoogleAnalyticsTracker"></div>
+
+
+<div class="SVELTE_HYDRATER contents" data-props="{&quot;organizations&quot;:[]}" data-target="SSOBanner"></div>
+
+<main class="flex flex-1 flex-col"><div class="SVELTE_HYDRATER contents" data-props="{&quot;iframeSrc&quot;:&quot;https://harisansarkhan-dogbreedclassification.hf.space/?__theme=system&quot;,&quot;runningSdk&quot;:&quot;gradio&quot;,&quot;containerClass&quot;:&quot;container&quot;,&quot;privateSpace&quot;:false}" data-target="SpaceIframe"> <iframe src="https://harisansarkhan-dogbreedclassification.hf.space/?__theme=system" title="Space app" class="container space-iframe flex-grow overflow-hidden bg-white p-0 dark:bg-white" allow="accelerometer; ambient-light-sensor; autoplay; battery; camera; clipboard-write; document-domain; encrypted-media; fullscreen; geolocation; gyroscope; layout-animations; legacy-image-formats; magnetometer; microphone; midi; oversized-images; payment; picture-in-picture; publickey-credentials-get; sync-xhr; usb; vr ; wake-lock; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-downloads allow-storage-access-by-user-activation" scrolling="no" id="iFrameResizer0" iframe-resizer="" style="overflow: hidden; height: 593px;"></iframe></div></main>
+</div>
+
+    <script>
+        import("/front/build/kube-e39fca4/index.js");
+        window.moonSha = "kube-e39fca4/";
+        window.hubConfig = JSON.parse(`{"features":{"signupDisabled":false},"sshGitUrl":"git@hf.co","moonHttpUrl":"https://huggingface.co","captchaApiKey":"bd5f2066-93dc-4bdd-a64b-a24646ca3859","stripePublicKey":"pk_live_x2tdjFXBCvXo2FFmMybezpeM00J6gPCAAc","environment":"production","userAgent":"HuggingFace (production)"}`);
+    </script>
+
+    <!-- Stripe -->
+    <script>
+        if (["hf.co", "huggingface.co"].includes(window.location.hostname)) {
+            const script = document.createElement("script");
+            script.src = "https://js.stripe.com/v3/";
+            script.async = true;
+            document.head.appendChild(script);
+        }
+    </script>
+
+    <!-- Google analytics v4 -->
+    <script>
+        if (["hf.co", "huggingface.co"].includes(window.location.hostname)) {
+            const script = document.createElement("script");
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-8Q63TH4CSL";
+            script.async = true;
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                if (window.dataLayer !== undefined) {
+                    window.dataLayer.push(arguments);
+                }
+            }
+            gtag("js", new Date());
+            gtag("config", "G-8Q63TH4CSL", { page_path: "/spaces/harisansarkhan/DogBreedClassification" });
+            /// ^ See https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+            gtag("consent", "default", { ad_storage: "denied", analytics_storage: "denied" });
+            /// ^ See https://developers.google.com/tag-platform/gtagjs/reference#consent
+            /// TODO: ask the user for their consent and update this with gtag('consent', 'update')
+        }
+    </script>
+
+    <!-- Google Analytics v3 (deprecated) -->
+    <script>
+        if (["hf.co", "huggingface.co"].includes(window.location.hostname)) {
+            (function (i, s, o, g, r, a, m) {
+                i["GoogleAnalyticsObject"] = r;
+                (i[r] =
+                    i[r] ||
+                    function () {
+                        (i[r].q = i[r].q || []).push(arguments);
+                    }),
+                    (i[r].l = 1 * new Date());
+                (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m);
+            })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ganalytics");
+            ganalytics("create", "UA-83738774-2", "auto");
+            ganalytics("send", "pageview", "/spaces/harisansarkhan/DogBreedClassification");
+        }
+    </script>
+
+
+<iframe name="__privateStripeMetricsController5670" frameborder="0" allowtransparency="true" scrolling="no" role="presentation" allow="payment *" src="https://js.stripe.com/v3/m-outer-93afeeb17bc37e711759584dbfc50d47.html#url=https%3A%2F%2Fhuggingface.co%2Fspaces%2Fharisansarkhan%2FDogBreedClassification&amp;title=DogBreedClassification%20-%20a%20Hugging%20Face%20Space%20by%20harisansarkhan&amp;referrer=&amp;muid=0d569486-3129-43a6-9aa3-c6f3c151cf9faa3376&amp;sid=39fbcb31-211f-4641-a61e-7f8fdafb08d68e16c9&amp;version=6&amp;preview=false" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe></body>
